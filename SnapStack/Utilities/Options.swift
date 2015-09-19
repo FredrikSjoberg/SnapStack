@@ -33,7 +33,7 @@ public struct StoreOptions {
     
     public let storeType: StoreType
     public let configuration: String?
-    public let options: [NSObject : AnyObject]
+    public let options: [NSObject : AnyObject]?
     
     public init(modelURL: NSURL, storeURL: NSURL) {
         managedObjectModelURL = modelURL
@@ -42,7 +42,7 @@ public struct StoreOptions {
         options = [NSMigratePersistentStoresAutomaticallyOption : true, NSInferMappingModelAutomaticallyOption : true]
     }
     
-    public init(modelURL: NSURL, storeType: StoreType, configuration: String? = nil, options: [NSObject : AnyObject]) {
+    public init(modelURL: NSURL, storeType: StoreType, configuration: String? = nil, options: [NSObject : AnyObject]? = nil) {
         managedObjectModelURL = modelURL
         self.storeType = storeType
         self.configuration = configuration
