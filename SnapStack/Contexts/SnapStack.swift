@@ -69,12 +69,10 @@ public class SnapStack : NSManagedObjectContext {
     }
 }
 
-extension SnapStack : ContextType {
-    public var handlerContext: NSManagedObjectContext {
-        return self
-    }
-}
+// MARK: - CommitType
+extension SnapStack : CommitType { }
 
+// MARK: - SnapStackType
 extension SnapStack : SnapStackType {
     public var options: StoreOptions {
         return storeOptions
