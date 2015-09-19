@@ -19,7 +19,7 @@ public protocol ContextType {
 }
 
 public extension ContextType {
-    func fetch<T: NSManagedObject>(entity: T.Type) -> QuerySet<T> {
+    public func fetch<T: NSManagedObject>(entity: T.Type) -> QuerySet<T> {
         return QuerySet<T>(handlerContext, T.entityName())
     }
     
