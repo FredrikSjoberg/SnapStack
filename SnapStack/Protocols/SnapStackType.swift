@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-public protocol SnapStackType : ContextType {
+public protocol SnapStackType : CommitType {
     var options: StoreOptions { get }
     var mainContext: NSManagedObjectContext { get }
     var rootContext: NSManagedObjectContext { get }
