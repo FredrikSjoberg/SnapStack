@@ -16,8 +16,6 @@ public protocol ContextType {
     func create<T: NSManagedObject>(entity: T.Type) -> T?
     func edit<T: NSManagedObject>(entity: T?) -> T?
     func delete<T: NSManagedObject>(entity: T)
-    
-    func commit() throws
 }
 
 public extension ContextType {
@@ -35,10 +33,5 @@ public extension ContextType {
     
     public func delete<T: NSManagedObject>(entity: T) {
         entity.inContext(handlerContext)?.deleteFromContext()
-    }
-    
-    public func commit() throws {
-        guard handlerContext.hasChanges else { return }
-        try handlerContext.save()
     }
 }

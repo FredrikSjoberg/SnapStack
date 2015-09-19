@@ -25,6 +25,8 @@
 		768D97B01BAD9CDA00C5ED47 /* SortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97A31BAD9CDA00C5ED47 /* SortDescriptor.swift */; };
 		768D97B51BAD9D7600C5ED47 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97B31BAD9D7600C5ED47 /* Errors.swift */; };
 		768D97B61BAD9D7600C5ED47 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97B41BAD9D7600C5ED47 /* Options.swift */; };
+		76ECC9B81BADDA6C00CF3A6B /* CommitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECC9B71BADDA6C00CF3A6B /* CommitType.swift */; settings = {ASSET_TAGS = (); }; };
+		76ECC9BC1BADDB1A00CF3A6B /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ECC9BB1BADDB1A00CF3A6B /* NSManagedObjectContext+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		768D97A31BAD9CDA00C5ED47 /* SortDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDescriptor.swift; sourceTree = "<group>"; };
 		768D97B31BAD9D7600C5ED47 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		768D97B41BAD9D7600C5ED47 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		76ECC9B71BADDA6C00CF3A6B /* CommitType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitType.swift; sourceTree = "<group>"; };
+		76ECC9BB1BADDB1A00CF3A6B /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 			children = (
 				768D97971BAD9CDA00C5ED47 /* NSManagedObject+Extensions.swift */,
 				768D97981BAD9CDA00C5ED47 /* QuerySet+Extensions.swift */,
+				76ECC9BB1BADDB1A00CF3A6B /* NSManagedObjectContext+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				768D979C1BAD9CDA00C5ED47 /* ContextType.swift */,
+				76ECC9B71BADDA6C00CF3A6B /* CommitType.swift */,
 				768D979D1BAD9CDA00C5ED47 /* SnapStackType.swift */,
 			);
 			path = Protocols;
@@ -279,12 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76ECC9B81BADDA6C00CF3A6B /* CommitType.swift in Sources */,
 				768D97B01BAD9CDA00C5ED47 /* SortDescriptor.swift in Sources */,
 				768D97AE1BAD9CDA00C5ED47 /* Predicate.swift in Sources */,
 				768D97AB1BAD9CDA00C5ED47 /* SnapStackType.swift in Sources */,
 				768D97A61BAD9CDA00C5ED47 /* SnapStack.swift in Sources */,
 				768D97AF1BAD9CDA00C5ED47 /* QuerySet.swift in Sources */,
 				768D97B51BAD9D7600C5ED47 /* Errors.swift in Sources */,
+				76ECC9BC1BADDB1A00CF3A6B /* NSManagedObjectContext+Extensions.swift in Sources */,
 				768D97A81BAD9CDA00C5ED47 /* QuerySet+Extensions.swift in Sources */,
 				768D97AC1BAD9CDA00C5ED47 /* Attribute.swift in Sources */,
 				768D97AA1BAD9CDA00C5ED47 /* ContextType.swift in Sources */,
