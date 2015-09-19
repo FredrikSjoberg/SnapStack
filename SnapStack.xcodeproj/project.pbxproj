@@ -45,8 +45,8 @@
 		768D977F1BAD9C0D00C5ED47 /* SnapStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		768D97841BAD9C0D00C5ED47 /* SnapStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapStackTests.swift; sourceTree = "<group>"; };
 		768D97861BAD9C0D00C5ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		768D978F1BAD9C9D00C5ED47 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		768D97901BAD9C9D00C5ED47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		768D978F1BAD9C9D00C5ED47 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		768D97901BAD9C9D00C5ED47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		768D97941BAD9CDA00C5ED47 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		768D97951BAD9CDA00C5ED47 /* SnapStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapStack.swift; sourceTree = "<group>"; };
 		768D97971BAD9CDA00C5ED47 /* NSManagedObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Extensions.swift"; sourceTree = "<group>"; };
