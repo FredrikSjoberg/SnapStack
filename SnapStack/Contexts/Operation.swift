@@ -47,15 +47,8 @@ public class Operation: NSManagedObjectContext {
     }
 }
 
+// MARK: - ContextType
 extension Operation {
-    
-}
-
-extension Operation : ContextType {
-    public var handlerContext: NSManagedObjectContext {
-        return self
-    }
-    
     public func create<T: NSManagedObject>(entity: T.Type) -> T? {
         return NSEntityDescription.insertNewObjectForEntityForName(entity.entityName(), inManagedObjectContext: handlerContext) as? T
     }
@@ -71,3 +64,5 @@ extension Operation : ContextType {
     }
 }
 
+// MARK: - CommitType
+extension Operation : CommitType { }
