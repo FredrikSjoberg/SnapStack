@@ -14,15 +14,5 @@ public extension QuerySet {
         let result = try array()
         guard result.count == 1 else { return nil }
         return result.first
-        /*
-        do {
-            let result = try array()
-            guard result.count == 1 else { return nil }
-            return result.first
-        }
-        catch {
-            return nil
-        }
-        */
     }
 }
