@@ -23,7 +23,6 @@
 		768D97AE1BAD9CDA00C5ED47 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97A11BAD9CDA00C5ED47 /* Predicate.swift */; };
 		768D97AF1BAD9CDA00C5ED47 /* QuerySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97A21BAD9CDA00C5ED47 /* QuerySet.swift */; };
 		768D97B01BAD9CDA00C5ED47 /* SortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97A31BAD9CDA00C5ED47 /* SortDescriptor.swift */; };
-		768D97B11BAD9CDA00C5ED47 /* TestEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97A41BAD9CDA00C5ED47 /* TestEnvironment.swift */; };
 		768D97B51BAD9D7600C5ED47 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97B31BAD9D7600C5ED47 /* Errors.swift */; };
 		768D97B61BAD9D7600C5ED47 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97B41BAD9D7600C5ED47 /* Options.swift */; };
 /* End PBXBuildFile section */
@@ -58,7 +57,6 @@
 		768D97A11BAD9CDA00C5ED47 /* Predicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predicate.swift; sourceTree = "<group>"; };
 		768D97A21BAD9CDA00C5ED47 /* QuerySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuerySet.swift; sourceTree = "<group>"; };
 		768D97A31BAD9CDA00C5ED47 /* SortDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDescriptor.swift; sourceTree = "<group>"; };
-		768D97A41BAD9CDA00C5ED47 /* TestEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnvironment.swift; sourceTree = "<group>"; };
 		768D97B31BAD9D7600C5ED47 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		768D97B41BAD9D7600C5ED47 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +106,6 @@
 				768D979B1BAD9CDA00C5ED47 /* Protocols */,
 				768D97B21BAD9D7600C5ED47 /* Utilities */,
 				768D979E1BAD9CDA00C5ED47 /* QueryKit */,
-				768D97A41BAD9CDA00C5ED47 /* TestEnvironment.swift */,
 				768D978F1BAD9C9D00C5ED47 /* LICENSE */,
 				768D97901BAD9C9D00C5ED47 /* README.md */,
 				768D97781BAD9C0D00C5ED47 /* SnapStack.h */,
@@ -285,7 +282,6 @@
 				768D97B01BAD9CDA00C5ED47 /* SortDescriptor.swift in Sources */,
 				768D97AE1BAD9CDA00C5ED47 /* Predicate.swift in Sources */,
 				768D97AB1BAD9CDA00C5ED47 /* SnapStackType.swift in Sources */,
-				768D97B11BAD9CDA00C5ED47 /* TestEnvironment.swift in Sources */,
 				768D97A61BAD9CDA00C5ED47 /* SnapStack.swift in Sources */,
 				768D97AF1BAD9CDA00C5ED47 /* QuerySet.swift in Sources */,
 				768D97B51BAD9D7600C5ED47 /* Errors.swift in Sources */,
@@ -479,6 +475,7 @@
 				768D978B1BAD9C0D00C5ED47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		768D978C1BAD9C0D00C5ED47 /* Build configuration list for PBXNativeTarget "SnapStackTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +484,7 @@
 				768D978E1BAD9C0D00C5ED47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
