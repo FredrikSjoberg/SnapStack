@@ -12,15 +12,15 @@ import CoreData
 public protocol ContextType {
     var handlerContext: NSManagedObjectContext { get }
     
-    func fetch<T: NSManagedObject>(entity: T.Type) -> QuerySet<T>
+    func fetch<T: NSManagedObject>(entity: T.Type) -> Fetch<T>
     func create<T: NSManagedObject>(entity: T.Type) -> T?
     func edit<T: NSManagedObject>(entity: T?) -> T?
     func delete<T: NSManagedObject>(entity: T)
 }
 
 public extension ContextType {
-    public func fetch<T: NSManagedObject>(entity: T.Type) -> QuerySet<T> {
-        return QuerySet<T>(handlerContext, T.entityName())
+    public func fetch<T: NSManagedObject>(entity: T.Type) -> Fetch<T> {
+        return Fetch(context: handlerContext)
     }
     
     public func create<T: NSManagedObject>(entity: T.Type) -> T? {
