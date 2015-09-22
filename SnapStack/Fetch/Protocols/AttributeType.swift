@@ -11,3 +11,13 @@ import Foundation
 public protocol AttributeType : KeyedType {
     typealias Value: ValueType
 }
+
+public extension AttributeType {
+    public func ascending() -> NSSortDescriptor {
+        return NSSortDescriptor(key: key, ascending: true)
+    }
+    
+    public func descending() -> NSSortDescriptor {
+        return NSSortDescriptor(key: key, ascending: false)
+    }
+}
