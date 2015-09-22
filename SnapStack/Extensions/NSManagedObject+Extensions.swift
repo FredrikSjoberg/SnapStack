@@ -46,3 +46,14 @@ public extension NSManagedObject {
         managedObjectContext?.deleteObject(self)
     }
 }
+
+public extension NSManagedObject {
+    static func nsExpression(value: NSManagedObject?) -> NSExpression {
+        if let actual = value {
+            return NSExpression(forConstantValue: actual)
+        }
+        else {
+            return NSExpression(forConstantValue: NSNull())
+        }
+    }
+}
