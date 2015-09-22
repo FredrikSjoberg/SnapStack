@@ -7,4 +7,7 @@ Simple Core Data Stack
 
 Inspiration:
 [Core Store](https://github.com/JohnEstropia/CoreStore)
+
 [AlecrimCoreData](https://github.com/Alecrim/AlecrimCoreData)
+
+[QueryKit](https://github.com/QueryKit/QueryKit)
