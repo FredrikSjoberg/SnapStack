@@ -45,6 +45,12 @@ public class Operation: NSManagedObjectContext {
             self.closure(operation: self)
         }
     }
+    
+    internal func syncronized() {
+        performBlockAndWait{ [unowned self] in
+            self.closure(operation: self)
+        }
+    }
 }
 
 // MARK: - ContextType
