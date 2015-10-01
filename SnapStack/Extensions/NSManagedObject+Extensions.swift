@@ -9,8 +9,8 @@
 import Foundation
 import CoreData
 
-internal extension NSManagedObject {
-    internal class func entityName() -> String {
+public extension NSManagedObject {
+    public class func entityName() -> String {
         return  NSStringFromClass(self).componentsSeparatedByString(".").last!
     }
 }
