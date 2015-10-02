@@ -45,6 +45,6 @@ extension SnapStackType {
     }
     
     public func synchronized(closure: (operation: Operation) -> Void) {
-        Operation(parent: self, closure: closure).syncronized()
+        Operation(parent: self, closure: closure).synchronized()
     }
 }
