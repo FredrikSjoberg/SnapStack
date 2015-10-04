@@ -12,6 +12,7 @@ import CoreData
 public protocol ContextType {
     var handlerContext: NSManagedObjectContext { get }
     
+    func seed<T: NSManagedObject>(entity: T.Type) -> Seed<T>
     func fetch<T: NSManagedObject>(entity: T.Type) -> Fetch<T>
     func create<T: NSManagedObject>(entity: T.Type) -> T?
     func edit<T: NSManagedObject>(entity: T?) -> T?
@@ -19,6 +20,10 @@ public protocol ContextType {
 }
 
 public extension ContextType {
+    public func seed<T: NSManagedObject>(entity: T.Type) -> Seed<T> {
+        return Seed(context: self)
+    }
+    
     public func fetch<T: NSManagedObject>(entity: T.Type) -> Fetch<T> {
         return Fetch(context: handlerContext)
     }

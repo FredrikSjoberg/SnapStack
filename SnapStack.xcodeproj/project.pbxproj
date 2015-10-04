@@ -19,6 +19,14 @@
 		768D97AB1BAD9CDA00C5ED47 /* SnapStackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D979D1BAD9CDA00C5ED47 /* SnapStackType.swift */; };
 		768D97B51BAD9D7600C5ED47 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97B31BAD9D7600C5ED47 /* Errors.swift */; };
 		768D97B61BAD9D7600C5ED47 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97B41BAD9D7600C5ED47 /* Options.swift */; };
+		76A19B2E1BC1C710000CA726 /* ProgressReportingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B2D1BC1C710000CA726 /* ProgressReportingType.swift */; settings = {ASSET_TAGS = (); }; };
+		76A19B301BC1C74E000CA726 /* LogType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B2F1BC1C74E000CA726 /* LogType.swift */; settings = {ASSET_TAGS = (); }; };
+		76A19B321BC1C76D000CA726 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B311BC1C76D000CA726 /* LogLevel.swift */; settings = {ASSET_TAGS = (); }; };
+		76A19B341BC1C788000CA726 /* LogProcessorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B331BC1C788000CA726 /* LogProcessorType.swift */; settings = {ASSET_TAGS = (); }; };
+		76A19B361BC1C79F000CA726 /* LogProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B351BC1C79F000CA726 /* LogProcessor.swift */; settings = {ASSET_TAGS = (); }; };
+		76A19B381BC1C7B4000CA726 /* LoggingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B371BC1C7B4000CA726 /* LoggingType.swift */; settings = {ASSET_TAGS = (); }; };
+		76A19B3A1BC1C7F9000CA726 /* SeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B391BC1C7F9000CA726 /* SeedType.swift */; settings = {ASSET_TAGS = (); }; };
+		76A19B3C1BC1C816000CA726 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B3B1BC1C816000CA726 /* Seed.swift */; settings = {ASSET_TAGS = (); }; };
 		76D10CB01BB1D971004D7A44 /* NSPredicate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D10CAF1BB1D971004D7A44 /* NSPredicate+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		76D10CB21BB1DB66004D7A44 /* NSExpression+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D10CB11BB1DB66004D7A44 /* NSExpression+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		76D10CBB1BB1FD08004D7A44 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D10CB51BB1FD08004D7A44 /* Attribute.swift */; settings = {ASSET_TAGS = (); }; };
@@ -64,6 +72,14 @@
 		768D979D1BAD9CDA00C5ED47 /* SnapStackType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapStackType.swift; sourceTree = "<group>"; };
 		768D97B31BAD9D7600C5ED47 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		768D97B41BAD9D7600C5ED47 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		76A19B2D1BC1C710000CA726 /* ProgressReportingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressReportingType.swift; sourceTree = "<group>"; };
+		76A19B2F1BC1C74E000CA726 /* LogType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogType.swift; sourceTree = "<group>"; };
+		76A19B311BC1C76D000CA726 /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
+		76A19B331BC1C788000CA726 /* LogProcessorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogProcessorType.swift; sourceTree = "<group>"; };
+		76A19B351BC1C79F000CA726 /* LogProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogProcessor.swift; sourceTree = "<group>"; };
+		76A19B371BC1C7B4000CA726 /* LoggingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingType.swift; sourceTree = "<group>"; };
+		76A19B391BC1C7F9000CA726 /* SeedType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedType.swift; sourceTree = "<group>"; };
+		76A19B3B1BC1C816000CA726 /* Seed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
 		76D10CAF1BB1D971004D7A44 /* NSPredicate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPredicate+Extensions.swift"; sourceTree = "<group>"; };
 		76D10CB11BB1DB66004D7A44 /* NSExpression+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSExpression+Extensions.swift"; sourceTree = "<group>"; };
 		76D10CB51BB1FD08004D7A44 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
@@ -136,6 +152,8 @@
 				768D97961BAD9CDA00C5ED47 /* Extensions */,
 				768D979B1BAD9CDA00C5ED47 /* Protocols */,
 				768D97B21BAD9D7600C5ED47 /* Utilities */,
+				76A19B271BC1B51B000CA726 /* Import */,
+				76A19B281BC1B51B000CA726 /* Logging */,
 				7649FB311BB09E6F00C29467 /* Fetch */,
 				768D978F1BAD9C9D00C5ED47 /* LICENSE */,
 				768D97901BAD9C9D00C5ED47 /* README.md */,
@@ -180,6 +198,7 @@
 				768D979C1BAD9CDA00C5ED47 /* ContextType.swift */,
 				76ECC9B71BADDA6C00CF3A6B /* CommitType.swift */,
 				768D979D1BAD9CDA00C5ED47 /* SnapStackType.swift */,
+				76A19B2D1BC1C710000CA726 /* ProgressReportingType.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -191,6 +210,59 @@
 				768D97B41BAD9D7600C5ED47 /* Options.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		76A19B271BC1B51B000CA726 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				76A19B2B1BC1B540000CA726 /* Protocols */,
+				76A19B2C1BC1B540000CA726 /* Structs */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		76A19B281BC1B51B000CA726 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				76A19B291BC1B536000CA726 /* Protocols */,
+				76A19B2A1BC1B536000CA726 /* Structs */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		76A19B291BC1B536000CA726 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				76A19B2F1BC1C74E000CA726 /* LogType.swift */,
+				76A19B331BC1C788000CA726 /* LogProcessorType.swift */,
+				76A19B371BC1C7B4000CA726 /* LoggingType.swift */,
+				76A19B391BC1C7F9000CA726 /* SeedType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		76A19B2A1BC1B536000CA726 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				76A19B311BC1C76D000CA726 /* LogLevel.swift */,
+				76A19B351BC1C79F000CA726 /* LogProcessor.swift */,
+				76A19B3B1BC1C816000CA726 /* Seed.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		76A19B2B1BC1B540000CA726 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		76A19B2C1BC1B540000CA726 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Structs;
 			sourceTree = "<group>";
 		};
 		76D10CB31BB1FCEF004D7A44 /* Protocols */ = {
@@ -336,8 +408,12 @@
 				76D10CCA1BB1FDD2004D7A44 /* RelationType.swift in Sources */,
 				76ECC9BC1BADDB1A00CF3A6B /* NSManagedObjectContext+Extensions.swift in Sources */,
 				76D10CC81BB1FD86004D7A44 /* FetchType.swift in Sources */,
+				76A19B301BC1C74E000CA726 /* LogType.swift in Sources */,
 				768D97AA1BAD9CDA00C5ED47 /* ContextType.swift in Sources */,
 				76D10CD21BB1FF0D004D7A44 /* ToOneRelation.swift in Sources */,
+				76A19B381BC1C7B4000CA726 /* LoggingType.swift in Sources */,
+				76A19B3A1BC1C7F9000CA726 /* SeedType.swift in Sources */,
+				76A19B321BC1C76D000CA726 /* LogLevel.swift in Sources */,
 				768D97921BAD9C9D00C5ED47 /* README.md in Sources */,
 				768D97A71BAD9CDA00C5ED47 /* NSManagedObject+Extensions.swift in Sources */,
 				76D10CCC1BB1FE41004D7A44 /* ToOneRelationType.swift in Sources */,
@@ -347,12 +423,16 @@
 				76D10CBE1BB1FD08004D7A44 /* Predicate.swift in Sources */,
 				76D10CBC1BB1FD08004D7A44 /* Fetch.swift in Sources */,
 				76D10CC01BB1FD08004D7A44 /* SortDescriptor.swift in Sources */,
+				76A19B2E1BC1C710000CA726 /* ProgressReportingType.swift in Sources */,
+				76A19B341BC1C788000CA726 /* LogProcessorType.swift in Sources */,
 				768D97A51BAD9CDA00C5ED47 /* Operation.swift in Sources */,
 				76D10CCE1BB1FE53004D7A44 /* ToManyRelationType.swift in Sources */,
 				76D10CBB1BB1FD08004D7A44 /* Attribute.swift in Sources */,
 				768D97B61BAD9D7600C5ED47 /* Options.swift in Sources */,
 				76D10CC61BB1FD67004D7A44 /* KeyedType.swift in Sources */,
 				76D10CC21BB1FD14004D7A44 /* ValueType.swift in Sources */,
+				76A19B361BC1C79F000CA726 /* LogProcessor.swift in Sources */,
+				76A19B3C1BC1C816000CA726 /* Seed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
