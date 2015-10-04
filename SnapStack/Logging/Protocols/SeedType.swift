@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-public protocol SeedType {
+public protocol SeedType : ProgressReportingType, LoggingType {
     typealias Entity: NSManagedObject
     
     var context: ContextType { get }

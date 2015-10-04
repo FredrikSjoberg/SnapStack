@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-public struct Seed<E: NSManagedObject> : SeedType, ProgressReportingType, LoggingType {
+public struct Seed<E: NSManagedObject> : SeedType {
     public typealias Entity = E
     
     public let context: ContextType
