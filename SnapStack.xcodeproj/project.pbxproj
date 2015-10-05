@@ -27,6 +27,7 @@
 		76A19B381BC1C7B4000CA726 /* LoggingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B371BC1C7B4000CA726 /* LoggingType.swift */; settings = {ASSET_TAGS = (); }; };
 		76A19B3A1BC1C7F9000CA726 /* SeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B391BC1C7F9000CA726 /* SeedType.swift */; settings = {ASSET_TAGS = (); }; };
 		76A19B3C1BC1C816000CA726 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B3B1BC1C816000CA726 /* Seed.swift */; settings = {ASSET_TAGS = (); }; };
+		76A19B451BC30174000CA726 /* NSError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A19B441BC30174000CA726 /* NSError+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		76D10CB01BB1D971004D7A44 /* NSPredicate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D10CAF1BB1D971004D7A44 /* NSPredicate+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		76D10CB21BB1DB66004D7A44 /* NSExpression+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D10CB11BB1DB66004D7A44 /* NSExpression+Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		76D10CBB1BB1FD08004D7A44 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D10CB51BB1FD08004D7A44 /* Attribute.swift */; settings = {ASSET_TAGS = (); }; };
@@ -80,6 +81,7 @@
 		76A19B371BC1C7B4000CA726 /* LoggingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingType.swift; sourceTree = "<group>"; };
 		76A19B391BC1C7F9000CA726 /* SeedType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedType.swift; sourceTree = "<group>"; };
 		76A19B3B1BC1C816000CA726 /* Seed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
+		76A19B441BC30174000CA726 /* NSError+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Extensions.swift"; sourceTree = "<group>"; };
 		76D10CAF1BB1D971004D7A44 /* NSPredicate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSPredicate+Extensions.swift"; sourceTree = "<group>"; };
 		76D10CB11BB1DB66004D7A44 /* NSExpression+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSExpression+Extensions.swift"; sourceTree = "<group>"; };
 		76D10CB51BB1FD08004D7A44 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				76ECC9BB1BADDB1A00CF3A6B /* NSManagedObjectContext+Extensions.swift */,
 				76D10CAF1BB1D971004D7A44 /* NSPredicate+Extensions.swift */,
 				76D10CB11BB1DB66004D7A44 /* NSExpression+Extensions.swift */,
+				76A19B441BC30174000CA726 /* NSError+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				76A19B301BC1C74E000CA726 /* LogType.swift in Sources */,
 				768D97AA1BAD9CDA00C5ED47 /* ContextType.swift in Sources */,
 				76D10CD21BB1FF0D004D7A44 /* ToOneRelation.swift in Sources */,
+				76A19B451BC30174000CA726 /* NSError+Extensions.swift in Sources */,
 				76A19B381BC1C7B4000CA726 /* LoggingType.swift in Sources */,
 				76A19B3A1BC1C7F9000CA726 /* SeedType.swift in Sources */,
 				76A19B321BC1C76D000CA726 /* LogLevel.swift in Sources */,
