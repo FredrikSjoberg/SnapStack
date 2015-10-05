@@ -14,3 +14,22 @@ public enum SnapStackError : ErrorType {
     case NoPersistentStore
     case MigrationToInMemoryStoreNotAllowed
 }
+
+extension SnapStackError : LogType {
+    public var level: LogLevel {
+        return LogLevel.Warning
+    }
+    
+    public var description: String {
+        switch self {
+        case .InvalidModel: return " | Invalid Managed Object Model"
+        case .NoPersistentStoreCoordinator: return " | No Persistent Store Coordinator"
+        case .NoPersistentStore: return " | No Persistent Store"
+        case .MigrationToInMemoryStoreNotAllowed: return " | Migration to InMemory Store not allowed"
+        }
+    }
+  public   
+    var debugDescription: String {
+        return description
+    }
+}
