@@ -84,7 +84,7 @@ public extension FetchType {
     
     func unique() throws -> Entity? {
         let result = try execute()
-        guard result.count == 1 else { return nil }
+        guard result.count == 1 else { return nil } // TODO: Should report this through Logging as LoggingType?
         return result.first
     }
 }

@@ -16,6 +16,7 @@ public protocol LogProcessorType {
 
 public extension LogProcessorType {
     func deliver(log: LogType) {
+        guard !level.isSubsetOf(LogLevel.None) else { return }
         guard level.contains(log.level) else { return }
         #if DEBUG
             debugPrint(log)

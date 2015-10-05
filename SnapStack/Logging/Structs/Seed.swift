@@ -17,7 +17,7 @@ public struct Seed<E: NSManagedObject> : SeedType {
     // ProgressReportingType
     public var progress: NSProgress
     // LogProcessorType
-    public var logger: LogProcessorType?
+    public var logger: LogProcessorType? // TODO: Perhaps its better to allways supply a logger but default it to .None
     
     public init(context: ContextType) {
         self.context = context
