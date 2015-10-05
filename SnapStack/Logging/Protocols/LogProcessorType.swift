@@ -19,7 +19,7 @@ public extension LogProcessorType {
         guard !level.isSubsetOf(LogLevel.None) else { return }
         guard level.contains(log.level) else { return }
         #if DEBUG
-            debugPrint(log)
+            debugPrint("\(log.logSeverity) \(log)")
         #endif
     }
 }
