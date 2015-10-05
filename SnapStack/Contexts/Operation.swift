@@ -12,6 +12,9 @@ public class Operation: NSManagedObjectContext {
     private let closure: (operation: Operation) -> Void
     private var commited = false
     
+    // LoggingType
+    public var logger: LogProcessorType?
+    
     internal init(parent: SnapStackType, closure: (operation: Operation) -> Void) {
         self.closure = closure
         
@@ -72,3 +75,6 @@ extension Operation {
 
 // MARK: - CommitType
 extension Operation : CommitType { }
+
+// MARK: - LoggingType
+extension Operation : LoggingType { }

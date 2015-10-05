@@ -14,6 +14,9 @@ public class SnapStack : NSManagedObjectContext {
     private var rootSavingsContext: NSManagedObjectContext
     private var inMemoryStore: NSPersistentStore?
     
+    // LoggingType
+    public var logger: LogProcessorType?
+    
     public required init(storeOptions: StoreOptions) throws {
         self.storeOptions = storeOptions
         
@@ -115,3 +118,5 @@ extension SnapStack : SnapStackType {
     }
 }
 
+// MARK: - LoggingType
+extension SnapStack : LoggingType { }
