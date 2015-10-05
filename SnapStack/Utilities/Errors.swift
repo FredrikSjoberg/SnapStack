@@ -28,8 +28,8 @@ extension SnapStackError : LogType {
         case .MigrationToInMemoryStoreNotAllowed: return " | Migration to InMemory Store not allowed"
         }
     }
-  public   
-    var debugDescription: String {
+    
+    public var debugDescription: String {
         return description
     }
 }
