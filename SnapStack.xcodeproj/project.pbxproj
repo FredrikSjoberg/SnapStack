@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		762ABF031BC478C50034CBA0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762ABF021BC478C50034CBA0 /* Info.swift */; settings = {ASSET_TAGS = (); }; };
 		768D97791BAD9C0D00C5ED47 /* SnapStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 768D97781BAD9C0D00C5ED47 /* SnapStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		768D97801BAD9C0D00C5ED47 /* SnapStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768D97751BAD9C0D00C5ED47 /* SnapStack.framework */; };
 		768D97851BAD9C0D00C5ED47 /* SnapStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D97841BAD9C0D00C5ED47 /* SnapStackTests.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		762ABF021BC478C50034CBA0 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		768D97751BAD9C0D00C5ED47 /* SnapStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		768D97781BAD9C0D00C5ED47 /* SnapStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapStack.h; sourceTree = "<group>"; };
 		768D977A1BAD9C0D00C5ED47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			children = (
 				768D97B31BAD9D7600C5ED47 /* Errors.swift */,
 				768D97B41BAD9D7600C5ED47 /* Options.swift */,
+				762ABF021BC478C50034CBA0 /* Info.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				76D10CD21BB1FF0D004D7A44 /* ToOneRelation.swift in Sources */,
 				76A19B451BC30174000CA726 /* NSError+Extensions.swift in Sources */,
 				76A19B381BC1C7B4000CA726 /* LoggingType.swift in Sources */,
+				762ABF031BC478C50034CBA0 /* Info.swift in Sources */,
 				76A19B3A1BC1C7F9000CA726 /* SeedType.swift in Sources */,
 				76A19B321BC1C76D000CA726 /* LogLevel.swift in Sources */,
 				768D97921BAD9C9D00C5ED47 /* README.md in Sources */,

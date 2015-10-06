@@ -26,7 +26,7 @@ internal extension NSManagedObject {
                 }
             }
             catch let nsError as NSError {
-                print("NSManagedObject.inContext(): \(nsError)")
+                print("NSManagedObject.inContext(): \(nsError)") // TODO: Needs to be either logged and/or thrown
                 return nil
             }
         }
@@ -35,7 +35,7 @@ internal extension NSManagedObject {
             return try context.existingObjectWithID(objectID) as? T
         }
         catch let nsError as NSError {
-            print("NSManagedObject.inContext(): \(nsError)")
+            print("NSManagedObject.inContext(): \(nsError)") // TODO: Needs to be either logged and/or thrown
             return nil
         }
     }

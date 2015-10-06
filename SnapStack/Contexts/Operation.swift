@@ -39,7 +39,9 @@ public class Operation: NSManagedObjectContext {
     }
     
     public override func reset() {
-        if commited { print("Operation.reset() | operation tries to reset after commit") }
+        if commited {
+            logger?.deliver(OperationInfo.ResetingAfterCommit(context: self))
+        }
         super.reset()
     }
     
@@ -63,12 +65,16 @@ extension Operation {
     }
     
     public func edit<T: NSManagedObject>(entity: T?) -> T? {
-        if commited { print("Operation.edit() | operation tries to edit \(entity?.entity) after commit") }
+        if commited {
+            logger?.deliver(OperationInfo.EditAfterCommit(context: self, entity: entity))
+        }
         return entity?.inContext(handlerContext)
     }
     
     public func delete<T: NSManagedObject>(entity: T) {
-        if commited { print("Operation.delete() | operation tries to delete \(entity.entity) after commit") }
+        if commited {
+            logger?.deliver(OperationInfo.DeleteAfterCommit(context: self, entity: entity))
+        }
         entity.inContext(handlerContext)?.deleteFromContext()
     }
 }
