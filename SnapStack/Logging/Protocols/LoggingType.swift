@@ -36,11 +36,10 @@ public extension LoggingType {
         return clone
     }
     
+    /// Exchanges the current logger, if any.
     func log(processor: LogProcessorType) -> Self {
         var clone = self
-        if clone.logger == nil {
-            clone.logger = processor
-        }
+        clone.logger = processor
         return clone
     }
 }
