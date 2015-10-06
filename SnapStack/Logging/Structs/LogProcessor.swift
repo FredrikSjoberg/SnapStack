@@ -12,7 +12,13 @@ public struct LogProcessor : LogProcessorType {
     public var level: LogLevel
     
     public init(level: LogLevel) {
-        self.level = level
+        if level.contains(.None) {
+            // A set that contains .None makes that the only valid option
+            // It ignores any "additional" settings in the set
+            self.level = .None
+        }
+        else {
+            self.level = level
+        }
     }
-    
 }

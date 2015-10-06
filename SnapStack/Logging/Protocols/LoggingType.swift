@@ -16,10 +16,22 @@ public extension LoggingType {
     func log(level: LogLevel) -> Self {
         var clone = self
         if clone.logger != nil {
-            switch clone.logger!.level {
-            case LogLevel.None: clone.logger!.level = .None
-            default: clone.logger?.level.insert(level)
+            switch (level, clone.logger!.level) {
+                // Disable Logging
+            case (LogLevel.None, _): clone.logger!.level = .None
+            default:
+                if level.contains(.None) {
+                    // A set that contains .None makes that the only valid option
+                    // It ignores any "additional" settings in the set
+                    clone.logger!.level = .None
+                }
+                else {
+                    clone.logger?.level.insert(level)
+                }
             }
+        }
+        else {
+            clone.logger = LogProcessor(level: level)
         }
         return clone
     }
