@@ -239,7 +239,6 @@
 				76A19B2F1BC1C74E000CA726 /* LogType.swift */,
 				76A19B331BC1C788000CA726 /* LogProcessorType.swift */,
 				76A19B371BC1C7B4000CA726 /* LoggingType.swift */,
-				76A19B391BC1C7F9000CA726 /* SeedType.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -249,7 +248,6 @@
 			children = (
 				76A19B311BC1C76D000CA726 /* LogLevel.swift */,
 				76A19B351BC1C79F000CA726 /* LogProcessor.swift */,
-				76A19B3B1BC1C816000CA726 /* Seed.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -257,6 +255,7 @@
 		76A19B2B1BC1B540000CA726 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				76A19B391BC1C7F9000CA726 /* SeedType.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -264,6 +263,7 @@
 		76A19B2C1BC1B540000CA726 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				76A19B3B1BC1C816000CA726 /* Seed.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
