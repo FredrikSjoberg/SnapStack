@@ -15,11 +15,11 @@ public protocol LogProcessorType {
 }
 
 public extension LogProcessorType {
-    func deliver(log: LogType) {
+    func deliver(log: LogType, file: StaticString = __FILE__, line: Int = __LINE__, function: StaticString = __FUNCTION__) {
         guard !level.isSubsetOf(LogLevel.None) else { return }
         guard level.contains(log.level) else { return }
         #if DEBUG
-            debugPrint("\(log.logSeverity) \(log)")
+            debugPrint("\(log.logSeverity) [\(file):\(line) \(function)]\n \(log)")
         #endif
     }
 }
