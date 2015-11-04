@@ -21,3 +21,13 @@ public extension AttributeType {
         return NSSortDescriptor(key: key, ascending: false)
     }
 }
+
+extension AttributeType {
+    public func ascending() -> SortDescriptor {
+        return SortDescriptor(sortDescriptor: ascending())
+    }
+    
+    public func descending() -> SortDescriptor {
+        return SortDescriptor(sortDescriptor: descending())
+    }
+}
