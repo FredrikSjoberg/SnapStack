@@ -78,13 +78,14 @@ public extension FetchType {
             throw error
         }
         
-        guard num != NSNotFound else { return 0 }
+        guard num != NSNotFound else { throw FetchError.CountNotAvaliable(entityName: entityName, predicate: predicate, context: context) }
         return num
     }
     
     func unique() throws -> Entity? {
         let result = try execute()
-        guard result.count == 1 else { return nil } // TODO: Should report this through Logging as LoggingType?
+        let num = result.count
+        guard num == 1 else { throw FetchError.NotUnique(entityName: entityName, count: num, predicate: predicate, context: context) }
         return result.first
     }
 }
