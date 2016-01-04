@@ -82,10 +82,10 @@ public extension FetchType {
         return num
     }
     
-    func unique() throws -> Entity? {
+    func unique() throws -> Entity {
         let result = try execute()
         let num = result.count
         guard num == 1 else { throw FetchError.NotUnique(entityName: entityName, count: num, predicate: predicate, context: context) }
-        return result.first
+        return result.first!
     }
 }
