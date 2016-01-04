@@ -16,28 +16,31 @@ public extension NSManagedObject {
 }
 
 internal extension NSManagedObject {
-    internal func inContext<T: NSManagedObject>(context: NSManagedObjectContext) -> T? {
-        if self.managedObjectContext === context { return self as? T }
+    internal func inContext<T: NSManagedObject>(context: NSManagedObjectContext) throws -> T {
+        if self.managedObjectContext === context {
+            return try castEntity()
+        }
         
-        if objectID.temporaryID {
-            do {
+        do {
+            if objectID.temporaryID {
                 try withExtendedLifetime(managedObjectContext) {
                     return try managedObjectContext?.obtainPermanentIDsForObjects([self])
                 }
             }
-            catch let nsError as NSError {
-                print("NSManagedObject.inContext(): \(nsError)") // TODO: Needs to be either logged and/or thrown
-                return nil
-            }
-        }
-        
-        do {
-            return try context.existingObjectWithID(objectID) as? T
+            
+            let rawEntity = try context.existingObjectWithID(objectID)
+            return try rawEntity.castEntity()
         }
         catch let nsError as NSError {
-            print("NSManagedObject.inContext(): \(nsError)") // TODO: Needs to be either logged and/or thrown
-            return nil
+            throw ContextError.CoreDataInternal(nsError: nsError)
         }
+    }
+    
+    internal func castEntity<T: NSManagedObject>() throws -> T {
+        guard let typedEntity = self as? T else {
+            throw ContextError.CastUnsuccessful(expectedEntity: T.entityName(), actualEntity: entity.name, context: managedObjectContext!)
+        }
+        return typedEntity
     }
 }
 

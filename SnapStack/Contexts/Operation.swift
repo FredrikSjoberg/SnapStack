@@ -60,22 +60,19 @@ public class Operation: NSManagedObjectContext {
 
 // MARK: - ContextType
 extension Operation {
-    public func create<T: NSManagedObject>(entity: T.Type) -> T? {
-        return NSEntityDescription.insertNewObjectForEntityForName(entity.entityName(), inManagedObjectContext: handlerContext) as? T
-    }
-    
-    public func edit<T: NSManagedObject>(entity: T?) -> T? {
+    public func edit<T: NSManagedObject>(entity: T) throws -> T {
         if commited {
             logger?.deliver(OperationInfo.EditAfterCommit(context: self, entity: entity))
         }
-        return entity?.inContext(handlerContext)
+        
+        return try entity.inContext(handlerContext)
     }
     
-    public func delete<T: NSManagedObject>(entity: T) {
+    public func delete<T: NSManagedObject>(entity: T) throws {
         if commited {
             logger?.deliver(OperationInfo.DeleteAfterCommit(context: self, entity: entity))
         }
-        entity.inContext(handlerContext)?.deleteFromContext()
+        try entity.inContext(handlerContext).deleteFromContext()
     }
 }
 

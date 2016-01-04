@@ -56,3 +56,27 @@ extension FetchError : LogType {
         return description
     }
 }
+
+public enum ContextError : ErrorType {
+    case UnableToCreate(entityName: String, context: NSManagedObjectContext)
+    case CastUnsuccessful(expectedEntity: String, actualEntity: String?, context: NSManagedObjectContext)
+    case CoreDataInternal(nsError: NSError)
+}
+
+extension ContextError : LogType {
+    public var level: LogLevel {
+        return .Warning
+    }
+    
+    public var description: String {
+        switch self {
+        case let .UnableToCreate(name, context): return " | Unable to create Entity: \(name) in context \(context)"
+        case let .CastUnsuccessful(expectedEntity, actualEntity, context): return " | Cast between \(actualEntity) and: \(expectedEntity) in context \(context) not successful"
+        case let .CoreDataInternal(nsError): return " | Internal CoreData error: \(nsError)"
+        }
+    }
+  
+    public var debugDescription: String {
+        return description
+    }
+}

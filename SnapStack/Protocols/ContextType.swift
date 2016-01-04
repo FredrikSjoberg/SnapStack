@@ -14,9 +14,9 @@ public protocol ContextType {
     
     func seed<T: NSManagedObject>(entity: T.Type) -> Seed<T>
     func fetch<T: NSManagedObject>(entity: T.Type) -> Fetch<T>
-    func create<T: NSManagedObject>(entity: T.Type) -> T?
-    func edit<T: NSManagedObject>(entity: T?) -> T?
-    func delete<T: NSManagedObject>(entity: T)
+    func create<T: NSManagedObject>(entity: T.Type) throws -> T
+    func edit<T: NSManagedObject>(entity: T) throws -> T
+    func delete<T: NSManagedObject>(entity: T) throws
 }
 
 public extension ContextType {
@@ -28,15 +28,16 @@ public extension ContextType {
         return Fetch(context: handlerContext)
     }
     
-    public func create<T: NSManagedObject>(entity: T.Type) -> T? {
-        return NSEntityDescription.insertNewObjectForEntityForName(entity.entityName(), inManagedObjectContext: handlerContext) as? T
+    public func create<T: NSManagedObject>(entity: T.Type) throws -> T {
+        let rawEntity = NSEntityDescription.insertNewObjectForEntityForName(entity.entityName(), inManagedObjectContext: handlerContext)
+        return try rawEntity.castEntity()
     }
     
-    public func edit<T: NSManagedObject>(entity: T?) -> T? {
-        return entity?.inContext(handlerContext)
+    public func edit<T: NSManagedObject>(entity: T) throws -> T {
+        return try entity.inContext(handlerContext)
     }
     
-    public func delete<T: NSManagedObject>(entity: T) {
-        entity.inContext(handlerContext)?.deleteFromContext()
+    public func delete<T: NSManagedObject>(entity: T) throws {
+        try entity.inContext(handlerContext).deleteFromContext()
     }
 }
